@@ -1,0 +1,16 @@
+body {
+	padding-top: 0;
+	background-position: 0 0;
+}
+
+section {
+	padding-top: 20px;
+}
+
+section .page-header {
+	display: none;
+}
+
+table {
+	background-color: #eeeeee !important;
+}
