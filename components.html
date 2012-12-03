@@ -78,6 +78,7 @@
       <li><a href="#button">按钮</a></li>
       <li><a href="#filter">筛选器</a></li>
       <li><a href="#form">表单</a></li>
+	   <li><a href="#sku">Sku选择框</a></li>
       <li><a href="#icon">图标</a></li>
       <li><a href="#list">列表</a></li>
       <li><a href="#loading">加载动画</a></li>
@@ -146,7 +147,42 @@
     </div>
   </div>
   <br />
-    
+ 
+ 	<div class="row">
+		<div class="span0">
+	      <h3>扩展样式</h3>
+	      <div id="tbh5v0" class="example">
+			<header>
+				<div class="c-inav">
+					<section>
+						<div class="back">
+							<span><em></em></span><a href="about:blank">我的淘宝</a>
+						</div>
+					</section>
+					<section>
+						<span>我的淘宝</span>
+					</section>
+					<section>
+						<div class="other red">
+							<a href="about:blank">分类</a>
+						</div>						
+					</section>
+				</div>
+			</header>
+	      </div>
+		</div>
+	    <div class="span8">
+	    	<h3>扩展样式DOM结构</h3>
+	    	<p>用以下DOM结构替换<code>div.c-inav > section:nth-child(3)</code>中的HTML</p>
+<pre>
+&lt;div class="other red"&gt;
+    &lt;a href="about:blank"&gt;分类&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+	</div>
+    <br />
+	   
 	<div class="row">
 		<div class="span0">
 	      <h3>扩展样式</h3>
@@ -698,7 +734,37 @@
 					</div>
 	          	</td>
 	          </tr>
-	          <!-- 选项卡 -->
+	        </tbody>
+	      </table>
+	    </div>
+  	</div>
+  </div>
+</section>
+
+<!-- Sku
+================================================== -->
+<section id="sku">
+  <div class="page-header">
+    <h1>sku选择框<small> <a href="../component/form/less/sku.less">sku.less</a></small></h1>    
+  </div>
+  <div class="row">
+  	<div class="span12">
+  		<div id="tbh5v0">
+	      <table class="table table-bordered table-striped">
+	        <colgroup>
+	          <col class="span3">
+	          <col class="span3">
+	          <col class="span6">
+	        </colgroup>
+	        <thead>
+	          <tr>
+	            <th>类名/代码</th>
+				<th>展现</th>
+	            <th>描述</th>
+	          </tr>
+	        </thead>
+	        <tbody>
+	          <!-- sku -->
 	          <tr>
 	          	<td>
 	          		<code>c-form-sku-2</code>
@@ -1636,46 +1702,60 @@
 ================================================== -->
 <section id="pagenav">
   <div class="page-header">
-    <h1>分页/翻页<small> <a href="../component/pagenav/less/pagenav.less">tab.less</a></small></h1>
+    <h1>分页/翻页<small> <a href="../component/pagenav/less/pagenav.less">pagenav.less</a></small></h1>
   </div>
 
   <div class="row">
     <div class="span0">
       <h3>分页样式</h3>
       <div id="tbh5v0" class="example">
-			<div class="c-pnav-con">
-				<ul>
-					<li class="c-pnav-disli">上一页</li>
-					<li><div class="c-pnav-arrow c-pnav-down"><span>1/3</span><span></span></div></li>
-					<li>
-						<select class="c-pnav-select">
+			<div id="pageNavDemo" class="c-pnav-con">
+				<section class="c-p-sec">
+					<div class="c-p-pre"><span class="c-p-p"><em></em></span><a>上一页</a></div>
+					<div class="c-p-cur">
+						<div class="c-p-arrow c-p-down"><span>1/3</span><span></span></div>
+						<select class="c-p-select">
 							<option>第1页</option>
 							<option>第2页</option>
 							<option>第3页</option>
-						</select>
-					</li>
-					<li class="c-pnav-enli">下一页</li>
-				</ul>
+						</select></div>
+					<div class="c-p-next"><a>下一页</a><span class="c-p-p"><em></em></span></div>
+				</section>
 			</div>
       </div>
     </div>
-    
+
     <div class="span8">
-    <h3>用法</h3>
+    <h3>基础DOM结构</h3>
     <p>
     	用于<code>div</code>标签，
-    	引入<a href="../component/pagenav/js/pagenav.js">pagenav.js</a>，
-    	设定id和<code>c-pnav-con</code>的类名。具体使用方法参见<a href="javascript.html#pagenav">JS模块 之 分页模块</a></p>
+                    引入<a href="../component/pagenav/js/pagenav.js">pagenav.js</a>，
+  设定id和<code>c-pnav-con</code>的类名。翻页按钮不可点时添加<code>c-p-grey</code>样式。具体使用方法参见<a href="javascript.html#pagenav">JS模块 之 分页模块</a>
+		</p>
 <pre>
-&lt;div id="pageNavDemo" class="c-pnav-con"&gt;&lt;/div&gt;
+&lt;div id="pageNavDemo" class="c-pnav-con"&gt;
+    &lt;section class="c-p-sec"&gt;
+        &lt;div class="c-p-pre"&gt;
+            &lt;span class="c-p-p"&gt;&lt;em&gt;&lt;/em&gt;&lt;/span&gt;&lt;a&gt;上一页&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="c-p-cur"&gt;
+            &lt;div class="c-p-arrow c-p-down"&gt;
+                &lt;span&gt;1/3&lt;/span&gt;&lt;span&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;select class="c-p-select"&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class="c-p-next"&gt;&lt;a&gt;下一页&lt;/a&gt;&lt;span class="c-p-p"&gt;&lt;em&gt;&lt;/em&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
 </pre>
     	</div>
     </div>
   <br />
-  
+
   <div class="row">
     <div class="span0">
-      <h3>翻页样式</h3>
+      <h3>图片指示器</h3>
       <div id="tbh5v0" class="example">
       	<div class="c-pnav-demo">
 	        <div class="c-pnav-left">
@@ -1694,9 +1774,9 @@
 	     </div>
       </div>
     </div>
-    
+
     <div class="span8">
-    <h3>DOM结构</h3>
+    <h3>基础DOM结构</h3>
 <pre>
 &lt;div class="c-pnav-left"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;ul class="c-pnav-list"&gt;
@@ -1711,10 +1791,10 @@
     	</div>
     </div>
   <br />
-  
+
   <div class="row">
     <div class="span0">
-      <h3>下拉样式</h3>
+      <h3>展开更多</h3>
       <div id="tbh5v0" class="example">
         <div class="c-pnav-wrapper">
             <a class="down">
@@ -1737,9 +1817,9 @@
         </div>
       </div>
     </div>
-    
+
     <div class="span8">
-    <h3>DOM结构</h3>
+    <h3>基础DOM结构</h3>
 <pre>
 &lt;div class="c-pnav-wrapper"&gt;
     &lt;a class="[down|up]" href="#"&gt;
