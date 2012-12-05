@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!--Le Less-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/tbh5v0.css" />
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../assets/css/docs.css" rel="stylesheet">
+    <link href="../assets/css/compdocs.css" rel="stylesheet">
+    <link href="../assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
+    <div class="container">
+
+<!-- classify
+================================================== -->
+<section id="classify">
+  <div class="page-header">
+    <h1>分类筛选<small> <a href="../component/classify/less/classify.less">classify.less</a></small></h1>    
+  </div>
+  <div class="row">
+  	
+  	<div class="span0">
+  		<div id="tbh5v0" class="example">
+  		  <h3>排序</h3>
+	      <div class="c-classify-screen">
+		      <ul>
+		          <li>
+		            <h2 class="off on">男装</h2>
+		            <ul class="subNav">
+		              <li>
+		                <h2 class="on">t恤</h2>
+		                <ul class="J_type">
+		                  <li><p class="property highlight"><a href="#">全部t恤</a></p></li>
+		                  <li>
+		                    <h5 class="on sub">品牌 <span>other/其它 Abercrombie Fitch Kwsion/快尚诚品 APE </span></h5>
+		                    <div>
+		                      <p class="property">other/其它</p>
+		                      <p class="property">Abercrombie</p>
+		                      <p class="property">Fitch</p>
+		                      <p class="property">Kwsion/快尚诚品</p>
+		                      <p class="property">APE</p>
+		                      <p class="J_more">更多</p>
+		                    </div>
+		                  </li>
+		                  <li>
+		                    <h5 class="off sub">款式 <span>开衫 套头 </span></h5>
+		                    <div style="display:none">
+		                      <p class="property">开衫</p>
+		                      <p class="property">套头</p>
+		                    </div>
+		                  </li>
+		                  <li>
+		                    <h5 class="off sub">领型<span>连帽 圆领 立领 翻领 </span></h5>
+		                    <div style="display:none">
+		                      <p class="property">连帽</p>
+		                      <p class="property">圆领</p>
+		                      <p class="property">立领</p>
+		                      <p class="property">翻领</p>
+		                    </div>
+		                  </li>
+		                </ul>
+		              </li>
+		            </ul>
+		          </li>
+		          <li><h2>女装</h2></li>
+		          <li><h2>男包</h2></li>
+		          <li><h2>女包</h2></li>
+		          <li><h2>居家服</h2></li>
+		          <li><h2>家电数码</h2></li>
+		          <li><h2>拍卖会</h2></li>
+		      </ul>
+		    </div>    
+		</div>
+  	</div>
+
+  	<div class="span8">
+	    <h3>DOM结构</h3>
+		<pre>
+   &lt;div class="c-classify-screen"&gt;
+      &lt;ul&gt;
+          &lt;li&gt;
+            &lt;h2 class="off on"&gt;男装&lt;/h2&gt;
+            &lt;ul class="subNav"&gt;
+              &lt;li&gt;
+                &lt;h2 class="on"&gt;t恤&lt;/h2&gt;
+                &lt;ul class="J_type"&gt;
+                  &lt;li&gt;&lt;p class="property highlight"&gt;&lt;a href="#"&gt;全部t恤&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;h5 class="on sub"&gt;品牌 &lt;span&gt;other/其它 Abercrombie Fitch Kwsion/快尚诚品 APE &lt;/span&gt;&lt;/h5&gt;
+                    &lt;div&gt;
+                      &lt;p class="property"&gt;other/其它&lt;/p&gt;
+                      &lt;p class="property"&gt;Abercrombie&lt;/p&gt;
+                      &lt;p class="property"&gt;Fitch&lt;/p&gt;
+                      &lt;p class="property"&gt;Kwsion/快尚诚品&lt;/p&gt;
+                      &lt;p class="property"&gt;APE&lt;/p&gt;
+                      &lt;p class="J_more"&gt;更多&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;h5 class="off sub"&gt;款式 &lt;span&gt;开衫 套头 &lt;/span&gt;&lt;/h5&gt;
+                    &lt;div style="display:none"&gt;
+                      &lt;p class="property"&gt;开衫&lt;/p&gt;
+                      &lt;p class="property"&gt;套头&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;h5 class="off sub"&gt;领型&lt;span&gt;连帽 圆领 立领 翻领 &lt;/span&gt;&lt;/h5&gt;
+                    &lt;div style="display:none"&gt;
+                      &lt;p class="property"&gt;连帽&lt;/p&gt;
+                      &lt;p class="property"&gt;圆领&lt;/p&gt;
+                      &lt;p class="property"&gt;立领&lt;/p&gt;
+                      &lt;p class="property"&gt;翻领&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;h2&gt;女装&lt;/h2&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;h2&gt;男包&lt;/h2&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;h2&gt;女包&lt;/h2&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;h2&gt;居家服&lt;/h2&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;h2&gt;家电数码&lt;/h2&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;h2&gt;拍卖会&lt;/h2&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+		</pre>
+    </div>
+
+  </div>
+
+</section>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="../assets/js/widgets.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.js"></script>
+    <script type="text/javascript" src="../assets/js/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/application.js"></script>
+    <script type="text/javascript" src="http://ux.etao.com/demo/portal.js"></script>
+  </body>
+</html>
