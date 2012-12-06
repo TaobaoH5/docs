@@ -26,56 +26,76 @@
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
     <div class="container">
 
-<!-- Loading
+<!-- Form
 ================================================== -->
-<section id="loading">
+<section id="input">
   <div class="page-header">
-    <h1>加载动画<small>支持的标签为<code>p</code> <a href="../component/more/less/more.less">more.less</a></small></h1>    
+    <h1>输入框<small> <a href="../component/form/less/form.less">form.less</a></small></h1>    
   </div>
   <div class="row">
-  	<div class="span4">
-  	<h3>基础代码</h3>
-<pre>
-&lt;p class="classname"&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
-</pre>  	
-  	</div>
-  	<div class="span5">
+  	<div class="span12">
   		<div id="tbh5v0">
 	      <table class="table table-bordered table-striped">
 	        <colgroup>
-	          <col class="span4">
-	          <col class="span4">
+	          <col class="span3">
+	          <col class="span3">
+	          <col class="span6">
 	        </colgroup>
 	        <thead>
 	          <tr>
-	            <th>类名</th>
-	            <th>展现</th>
+	            <th>类名/代码</th>
+				<th>展现</th>
+	            <th>描述</th>
 	          </tr>
 	        </thead>
 	        <tbody>
+	          <!-- 文本框 -->
 	          <tr>
 	            <td>
-	              <code>c-loading</code>
+					<code>c-form-txt-normal</code>
 	            </td>
-	            <td style="background:#ffffff">
-					<p class="c-loading"><span></span></p>
+	            <td>
+              		<input type="text" value="" class="c-form-txt-normal" placeholder="普通文本框"/>
+	            </td>
+	            <td rowspan="5">
+	            	
+	            		文本框
+<pre>
+&lt;input type="text" class="classname" value=""/&gt;
+</pre>
 	            </td>
 	          </tr>
 	          <tr>
-	            <td>
-	              <code>c-loading loader-grey</code>
-	            </td>
-	            <td style="background:#eeeeee">
-					<p class="c-loading loader-grey"><span></span></p>
-	            </td>
+	          	<td>
+	          		<code>c-form-txt-percent</code>
+	          	</td>
+	          	<td>
+	          		<input type="text" value="" class="c-form-txt-percent" placeholder="通栏文本框"/>
+	          	</td>
 	          </tr>
 	          <tr>
-	            <td>
-	              <code>c-loading loader-dark</code>
-	            </td>
-	            <td style="background:#333333">
-					<p class="c-loading loader-dark"><span></span></p>
-	            </td>
+	          	<td>
+	          		追加<code>error</code>类名
+	          	</td>
+	          	<td>
+	          		<input type="text" value="收货人姓名" class="c-form-txt-normal error" placeholder="出错提示"/>
+	          	</td>
+	          </tr>
+	          <tr>
+	          	<td>
+	          		追加<code>disabled</code>属性
+	          	</td>
+	          	<td>
+	          		<input type="text" value="收货人姓名" class="c-form-txt-normal" placeholder="禁止状态" disabled/>
+	          	</td>
+	          </tr>
+	          <tr>
+	          	<td>
+	          		<code>c-form-txt-small</code>
+	          	</td>
+	          	<td>
+	          		<input type="text" value="" class="c-form-txt-small" placeholder="数字框"/>
+	          	</td>
 	          </tr>
 	        </tbody>
 	      </table>
