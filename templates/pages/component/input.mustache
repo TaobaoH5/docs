@@ -1,0 +1,78 @@
+<!-- Form
+================================================== -->
+<section id="input">
+  <div class="page-header">
+    <h1>{{_i}}输入框<small> <a href="../component/form/less/form.less">form.less</a></small>{{/i}}</h1>    
+  </div>
+  <div class="row">
+  	<div class="span12">
+  		<div id="tbh5v0">
+	      <table class="table table-bordered table-striped">
+	        <colgroup>
+	          <col class="span3">
+	          <col class="span3">
+	          <col class="span6">
+	        </colgroup>
+	        <thead>
+	          <tr>
+	            <th>{{_i}}类名/代码{{/i}}</th>
+				<th>{{_i}}展现{{/i}}</th>
+	            <th>{{_i}}描述{{/i}}</th>
+	          </tr>
+	        </thead>
+	        <tbody>
+	          <!-- 文本框 -->
+	          <tr>
+	            <td>
+					<code>c-form-txt-normal</code>
+	            </td>
+	            <td>
+              		<input type="text" value="" class="c-form-txt-normal" placeholder="普通文本框"/>
+	            </td>
+	            <td rowspan="5">
+	            	{{_i}}
+	            		文本框
+<pre>
+&lt;input type="text" class="classname" value=""/&gt;
+</pre>
+	            	{{/i}}
+	            </td>
+	          </tr>
+	          <tr>
+	          	<td>
+	          		<code>c-form-txt-percent</code>
+	          	</td>
+	          	<td>
+	          		<input type="text" value="" class="c-form-txt-percent" placeholder="通栏文本框"/>
+	          	</td>
+	          </tr>
+	          <tr>
+	          	<td>
+	          		追加<code>error</code>类名
+	          	</td>
+	          	<td>
+	          		<input type="text" value="收货人姓名" class="c-form-txt-normal error" placeholder="出错提示"/>
+	          	</td>
+	          </tr>
+	          <tr>
+	          	<td>
+	          		追加<code>disabled</code>属性
+	          	</td>
+	          	<td>
+	          		<input type="text" value="收货人姓名" class="c-form-txt-normal" placeholder="禁止状态" disabled/>
+	          	</td>
+	          </tr>
+	          <tr>
+	          	<td>
+	          		<code>c-form-txt-small</code>
+	          	</td>
+	          	<td>
+	          		<input type="text" value="" class="c-form-txt-small" placeholder="数字框"/>
+	          	</td>
+	          </tr>
+	        </tbody>
+	      </table>
+	    </div>
+  	</div>
+  </div>
+</section>
