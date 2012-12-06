@@ -4,11 +4,51 @@
   <div class="page-header">
     <h1>{{_i}}排序<small> <a href="../component/sort/less/sort.less">sort.less</a></small>{{/i}}</h1>    
   </div>
+
+<!-- 排序功能 -->
   <div class="row">
-  	
+    <div class="span0">
+      <h3>{{_i}}普通样式{{/i}}</h3>
+      <div id="tbh5v0" class="example">
+    <ul class="c-list-sort">
+      <li class="highlight"><label>人气</label></li>
+      <li class="sort-asc">
+        <label>价格</label>
+        <span>
+          <em></em>
+          <em></em>
+        </span>
+      </li>
+      <li><label>信用</label></li>
+      <li><label>评价</label></li>
+    </ul>
+      </div>
+    </div>
+    
+    <div class="span5">
+    <h3>{{_i}}DOM结构{{/i}}</h3>
+<pre>
+&lt;ul class="c-list-sort"&gt;
+    &lt;li class="highlight"&gt;&lt;label&gt;人气&lt;/label&gt;&lt;/li&gt;
+    &lt;li class="sort-asc"&gt;
+        &lt;label&gt;价格&lt;/label&gt;
+        &lt;span&gt;
+            &lt;em&gt;&lt;/em&gt;
+            &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;label&gt;信用&lt;/label&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;label&gt;评价&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+      </div>
+    </div>
+  <br />
+
+  <div class="row">
   	<div class="span0">
   		<div id="tbh5v0" class="example">
-  		  <h3>{{_i}}排序{{/i}}</h3>
+  		  <h3>{{_i}}新版样式{{/i}}</h3>
 	      <div class="c-sort-box">
 		      <div class="c-sort-arrow"></div>
 		      <ul class="c-sort">
@@ -23,7 +63,7 @@
 		</div>
   	</div>
 
-  	<div class="span8">
+  	<div class="span5">
 	    <h3>{{_i}}DOM结构{{/i}}</h3>
 		<pre>
 &lt;div class="c-sort-box"&gt;
