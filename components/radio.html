@@ -26,56 +26,66 @@
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
     <div class="container">
 
-<!-- Loading
+<!-- Form
 ================================================== -->
-<section id="loading">
+<section id="radio">
   <div class="page-header">
-    <h1>加载动画<small>支持的标签为<code>p</code> <a href="../component/more/less/more.less">more.less</a></small></h1>    
+    <h1>单选框<small> <a href="../component/form/less/form.less">form.less</a></small></h1>    
   </div>
   <div class="row">
-  	<div class="span4">
-  	<h3>基础代码</h3>
-<pre>
-&lt;p class="classname"&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
-</pre>  	
-  	</div>
-  	<div class="span5">
+  	<div class="span12">
   		<div id="tbh5v0">
 	      <table class="table table-bordered table-striped">
 	        <colgroup>
-	          <col class="span4">
-	          <col class="span4">
+	          <col class="span3">
+	          <col class="span3">
+	          <col class="span6">
 	        </colgroup>
 	        <thead>
 	          <tr>
-	            <th>类名</th>
-	            <th>展现</th>
+	            <th>类名/代码</th>
+				<th>展现</th>
+	            <th>描述</th>
 	          </tr>
 	        </thead>
 	        <tbody>
+	          <!-- 单选按钮 -->
 	          <tr>
 	            <td>
-	              <code>c-loading</code>
+					<code>c-form-radio-normal</code>
 	            </td>
-	            <td style="background:#ffffff">
-					<p class="c-loading"><span></span></p>
+	            <td>
+              		<input type="radio" value="" name="radio-normal-btn" class="c-form-radio-normal" checked/>
+              		<input type="radio" value="" name="radio-normal-btn" class="c-form-radio-normal"/>
+              		<input type="radio" value="" name="radio-normal-btn" class="c-form-radio-normal" disabled/>
+	            </td>
+	            <td rowspan="3">
+	            	
+	            		单选框
+<pre>
+&lt;input type="radio" class="classname" value=""/&gt;
+</pre>
 	            </td>
 	          </tr>
 	          <tr>
-	            <td>
-	              <code>c-loading loader-grey</code>
-	            </td>
-	            <td style="background:#eeeeee">
-					<p class="c-loading loader-grey"><span></span></p>
-	            </td>
+	          	<td>
+	          		<code>c-form-radio</code>        		
+	          	</td>
+	          	<td>
+              		<input type="radio" value="" name="radio-btn" class="c-form-radio" checked/>
+              		<input type="radio" value="" name="radio-btn" class="c-form-radio"/>
+              		<input type="radio" value="" name="radio-btn" class="c-form-radio" disabled/>
+	          	</td>
 	          </tr>
 	          <tr>
-	            <td>
-	              <code>c-loading loader-dark</code>
-	            </td>
-	            <td style="background:#333333">
-					<p class="c-loading loader-dark"><span></span></p>
-	            </td>
+	          	<td>
+	          		<code>c-form-radio-blue</code>
+	          	</td>
+	          	<td>
+              		<input type="radio" value="" name="radio-blue-btn" class="c-form-radio-blue" checked/>
+              		<input type="radio" value="" name="radio-blue-btn" class="c-form-radio-blue"/>
+              		<input type="radio" value="" name="radio-blue-btn" class="c-form-radio-blue" disabled/>
+	          	</td>
 	          </tr>
 	        </tbody>
 	      </table>

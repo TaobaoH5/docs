@@ -77,7 +77,10 @@
       <li><a href="#innernav">内页导航条</a</li>
       <li><a href="#footer">底部信息</a</li>	
       <li><a href="#button">按钮</a></li>
-      <li><a href="#form">表单</a></li>
+      <li><a href="#radio">单选</a></li>
+      <li><a href="#checkbox">复选</a></li>
+      <li><a href="#input">输入框</a></li>
+      <li><a href="#select">下拉框</a></li>
       <li><a href="#sku">Sku选择框</a></li>
       <li><a href="#icon">图标</a></li>
       <li><a href="#list">列表</a></li>
@@ -86,7 +89,8 @@
       <li><a href="#message">信息提示</a></li>
       <li><a href="#photo">图片格式</a></li>
       <li><a href="#tab">选项卡</a></li>
-      <li><a href="#pagenav">分页/翻页</a></li>
+      <li><a href="#pagenav">翻页</a></li>
+      <li><a href="#pageindicate">页面指示器</a></li>
       <li><a href="#float">浮层</a></li>
       <li><a href="#leftcate">侧滑</a></li>
       <li><a href="#logistics">时间轴</a></li>
@@ -127,7 +131,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     	<h3>基础DOM结构</h3>
     	<p>如果不需要右边的按钮，请保持<code>div.c-inav > section:last-child</code>为空元素</p>
 <pre>
@@ -176,7 +180,7 @@
 			</header>
 	      </div>
 		</div>
-	    <div class="span8">
+	    <div class="span5">
 	    	<h3>扩展样式DOM结构</h3>
 	    	<p>用以下DOM结构替换<code>div.c-inav > section:nth-child(3)</code>中的HTML</p>
 <pre>
@@ -214,7 +218,7 @@
 			</header>
 	      </div>
 		</div>
-	    <div class="span8">
+	    <div class="span5">
 	    	<h3>扩展样式DOM结构</h3>
 	    	<p>用以下DOM结构替换<code>div.c-inav > section:nth-child(2)</code>中的HTML</p>
 <pre>
@@ -259,7 +263,7 @@
 			</header>
 	      </div>
     	</div>
-		<div class="span8">
+		<div class="span5">
     		<h3>子菜单DOM结构</h3>
     		<p>用以下DOM结构追加在<code>div.c-inav</code>后</p>
 <pre>
@@ -303,7 +307,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     <h3>基础DOM结构</h3>
 <pre>
 &lt;footer class="footer"&gt;
@@ -430,9 +434,9 @@
 
 <!-- Form
 ================================================== -->
-<section id="form">
+<section id="radio">
   <div class="page-header">
-    <h1>表单元素<small> <a href="../component/form/less/form.less">form.less</a></small></h1>    
+    <h1>单选框<small> <a href="../component/form/less/form.less">form.less</a></small></h1>    
   </div>
   <div class="row">
   	<div class="span12">
@@ -489,6 +493,36 @@
               		<input type="radio" value="" name="radio-blue-btn" class="c-form-radio-blue" disabled/>
 	          	</td>
 	          </tr>
+	        </tbody>
+	      </table>
+	    </div>
+  	</div>
+  </div>
+</section>
+
+<!-- Form
+================================================== -->
+<section id="checkbox">
+  <div class="page-header">
+    <h1>复选框<small> <a href="../component/form/less/form.less">form.less</a></small></h1>    
+  </div>
+  <div class="row">
+  	<div class="span12">
+  		<div id="tbh5v0">
+	      <table class="table table-bordered table-striped">
+	        <colgroup>
+	          <col class="span3">
+	          <col class="span3">
+	          <col class="span6">
+	        </colgroup>
+	        <thead>
+	          <tr>
+	            <th>类名/代码</th>
+				<th>展现</th>
+	            <th>描述</th>
+	          </tr>
+	        </thead>
+	        <tbody>
 	          <!-- 复选按钮 -->
 	          <tr>
 	            <td>
@@ -527,6 +561,36 @@
               		<input type="checkbox" value="" name="checkbox-blue-btn" class="c-form-checkbox-blue" disabled/>
 	          	</td>
 	          </tr>
+	        </tbody>
+	      </table>
+	    </div>
+  	</div>
+  </div>
+</section>
+
+<!-- Form
+================================================== -->
+<section id="input">
+  <div class="page-header">
+    <h1>输入框<small> <a href="../component/form/less/form.less">form.less</a></small></h1>    
+  </div>
+  <div class="row">
+  	<div class="span12">
+  		<div id="tbh5v0">
+	      <table class="table table-bordered table-striped">
+	        <colgroup>
+	          <col class="span3">
+	          <col class="span3">
+	          <col class="span6">
+	        </colgroup>
+	        <thead>
+	          <tr>
+	            <th>类名/代码</th>
+				<th>展现</th>
+	            <th>描述</th>
+	          </tr>
+	        </thead>
+	        <tbody>
 	          <!-- 文本框 -->
 	          <tr>
 	            <td>
@@ -575,25 +639,36 @@
 	          		<input type="text" value="" class="c-form-txt-small" placeholder="数字框"/>
 	          	</td>
 	          </tr>
-	          <!-- 搜索框 -->
+	        </tbody>
+	      </table>
+	    </div>
+  	</div>
+  </div>
+</section>
+
+<!-- Form
+================================================== -->
+<section id="select">
+  <div class="page-header">
+    <h1>下拉框<small> <a href="../component/form/less/form.less">form.less</a></small></h1>    
+  </div>
+  <div class="row">
+  	<div class="span12">
+  		<div id="tbh5v0">
+	      <table class="table table-bordered table-striped">
+	        <colgroup>
+	          <col class="span3">
+	          <col class="span3">
+	          <col class="span6">
+	        </colgroup>
+	        <thead>
 	          <tr>
-	          	<td>
-	          		<code>c-form-search</code>
-	          	</td>
-	          	<td>
-	          		<div class="c-form-search"><input type="search" value="搜索框" /><button><span/></button></div>
-	          	</td>
-	            <td>
-	            	
-	            		搜索框
-<pre>
-&lt;div class="classname"&gt;
-    &lt;input type="search" value="a" /&gt;
-    &lt;button&gt;&lt;span/&gt;&lt;/button&gt;
-&lt;/div&gt;
-</pre>
-	            </td>
+	            <th>类名/代码</th>
+				<th>展现</th>
+	            <th>描述</th>
 	          </tr>
+	        </thead>
+	        <tbody>
 	          <!-- 选择框 -->
 	          <tr>
 	          	<td>
@@ -1080,45 +1155,7 @@
   <div class="page-header">
     <h1>列表<small> <a href="../component/list/less/list.less">list.less</a></small></h1>
   </div>
-  <!-- 排序功能 -->
-  <div class="row">
-    <div class="span0">
-      <h3>排序功能样式</h3>
-      <div id="tbh5v0" class="example">
-		<ul class="c-list-sort">
-			<li class="highlight"><label>人气</label></li>
-			<li class="sort-asc">
-				<label>价格</label>
-				<span>
-					<em></em>
-					<em></em>
-				</span>
-			</li>
-			<li><label>信用</label></li>
-			<li><label>评价</label></li>
-		</ul>
-      </div>
-    </div>
-    
-    <div class="span8">
-    <h3>DOM结构</h3>
-<pre>
-&lt;ul class="c-list-sort"&gt;
-    &lt;li class="highlight"&gt;&lt;label&gt;人气&lt;/label&gt;&lt;/li&gt;
-    &lt;li class="sort-asc"&gt;
-        &lt;label&gt;价格&lt;/label&gt;
-        &lt;span&gt;
-            &lt;em&gt;&lt;/em&gt;
-            &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;label&gt;信用&lt;/label&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;label&gt;评价&lt;/label&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
-    	</div>
-    </div>
-  <br />
+  
   <!-- 普通列表 -->
   <div class="row">
     <div class="span0">
@@ -1131,7 +1168,7 @@
 		</div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     <h3>DOM结构</h3>
 <pre>
 &lt;a href="about:blank" class="c-list-normal"&gt;
@@ -1151,7 +1188,7 @@
 		</div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
 <pre>
 &lt;div class="c-list-normal"&gt;
     &lt;label&gt;F4-3 新奥尔良烤翅 烧烤 烤鸡腌料 KFC腌料148克装 中辣腌料&lt;/label&gt;
@@ -1175,7 +1212,7 @@
 		</div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     <h3>DOM结构</h3>
 <pre>
 &lt;ul class="c-list-group"&gt;
@@ -1204,7 +1241,7 @@
 		</div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     <h3>DOM结构</h3>
 <pre>
 &lt;ul class="c-list-ext-group"&gt;
@@ -1232,7 +1269,7 @@
 &lt;p class="classname"&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
 </pre>  	
   	</div>
-  	<div class="span8">
+  	<div class="span5">
   		<div id="tbh5v0">
 	      <table class="table table-bordered table-striped">
 	        <colgroup>
@@ -1369,7 +1406,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     <h3>DOM结构</h3>
 <pre>
 &lt;div class="c-msg"&gt;    
@@ -1400,7 +1437,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     <h3>DOM结构</h3>
 <pre>
 &lt;div class="c-msg"&gt;    
@@ -1431,7 +1468,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     <h3>DOM结构</h3>
 <pre>
 &lt;div class="c-msg"&gt;    
@@ -1533,7 +1570,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     <h3>DOM结构</h3>
 <pre>
 &lt;div class="c-tab"&gt;
@@ -1561,7 +1598,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     <h3>DOM结构</h3>
 <pre>
 &lt;div class="c-tab"&gt;
@@ -1591,7 +1628,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     <h3>DOM结构</h3>
 <pre>
 &lt;div class="c-tab"&gt;
@@ -1621,7 +1658,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     	<h3>基础DOM结构</h3>
 <pre>
 &lt;div class="c-filter"&gt;    
@@ -1640,12 +1677,12 @@
 ================================================== -->
 <section id="pagenav">
   <div class="page-header">
-    <h1>分页/翻页<small> <a href="../component/pagenav/less/pagenav.less">pagenav.less</a></small></h1>
+    <h1>翻页<small> <a href="../component/pagenav/less/pagenav.less">pagenav.less</a></small></h1>
   </div>
 
   <div class="row">
     <div class="span0">
-      <h3>分页样式</h3>
+      <h3>翻页</h3>
       <div id="tbh5v0" class="example">
 			<div id="pageNavDemo" class="c-pnav-con">
 				<section class="c-p-sec">
@@ -1663,7 +1700,7 @@
       </div>
     </div>
 
-    <div class="span8">
+    <div class="span5">
     <h3>基础DOM结构</h3>
     <p>
     	用于<code>div</code>标签，
@@ -1689,11 +1726,18 @@
 </pre>
     	</div>
     </div>
-  <br />
+</section>
+
+<!-- Pagenav
+================================================== -->
+<section id="pageindicate">
+  <div class="page-header">
+    <h1>页面指示器<small> <a href="../component/pagenav/less/pagenav.less">pagenav.less</a></small></h1>
+  </div>
 
   <div class="row">
     <div class="span0">
-      <h3>图片指示器</h3>
+      <h3>页面指示器</h3>
       <div id="tbh5v0" class="example">
       	<div class="c-pnav-demo">
 	        <div class="c-pnav-left">
@@ -1713,7 +1757,7 @@
       </div>
     </div>
 
-    <div class="span8">
+    <div class="span5">
     <h3>基础DOM结构</h3>
 <pre>
 &lt;div class="c-pnav-left"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
@@ -1729,48 +1773,6 @@
     	</div>
     </div>
   <br />
-
-  <div class="row">
-    <div class="span0">
-      <h3>展开更多</h3>
-      <div id="tbh5v0" class="example">
-        <div class="c-pnav-wrapper">
-            <a class="down">
-                <!--箭头-->
-                <div>
-                    <span>
-                    </span>
-                </div>
-            </a>
-        </div>
-        <br />
-        <div class="c-pnav-wrapper">
-            <a class="up">
-                <!--箭头-->
-                <div>
-                    <span>
-                    </span>
-                </div>
-            </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="span8">
-    <h3>基础DOM结构</h3>
-<pre>
-&lt;div class="c-pnav-wrapper"&gt;
-    &lt;a class="[down|up]" href="#"&gt;
-        &lt;!--箭头--&gt;
-        &lt;div&gt;
-            &lt;span&gt;
-            &lt;/span&gt;
-        &lt;/div&gt;
-    &lt;/a&gt;
-&lt;/div&gt;
-</pre>
-    	</div>
-    </div>
 
 </section>
 
@@ -1793,7 +1795,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     <h3>DOM结构</h3>
 <pre>
 &lt;div class="c-float-shortcutLayer"&gt;
@@ -1819,7 +1821,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     <h3>DOM结构</h3>
 <pre>
 &lt;div class="c-float-fingPop"&gt;
@@ -1839,7 +1841,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
 <pre>
 &lt;div class="c-float-shakePop"&gt;
     &lt;span&gt;请摇晃手机以更新列表结果&lt;/span&gt;
@@ -1855,7 +1857,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
 <pre>
 &lt;div class="c-float-impWarn"&gt;
     &lt;span&gt;重要提示&lt;/span&gt;
@@ -1879,7 +1881,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     <h3>DOM结构</h3>
 <pre>
 &lt;div class="c-float-modePop"&gt;
@@ -1904,7 +1906,7 @@
       </div>
     </div>
     
-    <div class="span8">
+    <div class="span5">
     <h3>DOM结构</h3>
 <pre>
 &lt;div class="c-float-delPop"&gt;
@@ -1937,7 +1939,7 @@
 	    </div>
   	</div>
 
-  	<div class="span8">
+  	<div class="span5">
 	    <h3>DOM结构</h3>
 		<pre>
 &lt;div class="c-lcate-box"&gt;
@@ -2013,7 +2015,7 @@
 		</div>
   	</div>
 
-  	<div class="span8">
+  	<div class="span5">
 	    <h3>DOM结构</h3>
 		<pre>
     &lt;div class="c-logis-detail"&gt;
@@ -2075,11 +2077,51 @@
   <div class="page-header">
     <h1>排序<small> <a href="../component/sort/less/sort.less">sort.less</a></small></h1>    
   </div>
+
+<!-- 排序功能 -->
   <div class="row">
-  	
+    <div class="span0">
+      <h3>普通样式</h3>
+      <div id="tbh5v0" class="example">
+    <ul class="c-list-sort">
+      <li class="highlight"><label>人气</label></li>
+      <li class="sort-asc">
+        <label>价格</label>
+        <span>
+          <em></em>
+          <em></em>
+        </span>
+      </li>
+      <li><label>信用</label></li>
+      <li><label>评价</label></li>
+    </ul>
+      </div>
+    </div>
+    
+    <div class="span5">
+    <h3>DOM结构</h3>
+<pre>
+&lt;ul class="c-list-sort"&gt;
+    &lt;li class="highlight"&gt;&lt;label&gt;人气&lt;/label&gt;&lt;/li&gt;
+    &lt;li class="sort-asc"&gt;
+        &lt;label&gt;价格&lt;/label&gt;
+        &lt;span&gt;
+            &lt;em&gt;&lt;/em&gt;
+            &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;label&gt;信用&lt;/label&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;label&gt;评价&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+      </div>
+    </div>
+  <br />
+
+  <div class="row">
   	<div class="span0">
   		<div id="tbh5v0" class="example">
-  		  <h3>排序</h3>
+  		  <h3>新版样式</h3>
 	      <div class="c-sort-box">
 		      <div class="c-sort-arrow"></div>
 		      <ul class="c-sort">
@@ -2094,7 +2136,7 @@
 		</div>
   	</div>
 
-  	<div class="span8">
+  	<div class="span5">
 	    <h3>DOM结构</h3>
 		<pre>
 &lt;div class="c-sort-box"&gt;
@@ -2177,7 +2219,7 @@
 		</div>
   	</div>
 
-  	<div class="span8">
+  	<div class="span5">
 	    <h3>DOM结构</h3>
 		<pre>
    &lt;div class="c-classify-screen"&gt;
@@ -2278,7 +2320,7 @@
 		  </div>
   	</div>
 
-  	<div class="span8">
+  	<div class="span5">
 	    <h3>DOM结构</h3>
 		  <pre>
 	&lt;div id="J_Taojia" class="taoplus" style="position:static"&gt;

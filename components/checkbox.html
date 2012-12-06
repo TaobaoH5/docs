@@ -26,56 +26,66 @@
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
     <div class="container">
 
-<!-- Loading
+<!-- Form
 ================================================== -->
-<section id="loading">
+<section id="checkbox">
   <div class="page-header">
-    <h1>加载动画<small>支持的标签为<code>p</code> <a href="../component/more/less/more.less">more.less</a></small></h1>    
+    <h1>复选框<small> <a href="../component/form/less/form.less">form.less</a></small></h1>    
   </div>
   <div class="row">
-  	<div class="span4">
-  	<h3>基础代码</h3>
-<pre>
-&lt;p class="classname"&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
-</pre>  	
-  	</div>
-  	<div class="span5">
+  	<div class="span12">
   		<div id="tbh5v0">
 	      <table class="table table-bordered table-striped">
 	        <colgroup>
-	          <col class="span4">
-	          <col class="span4">
+	          <col class="span3">
+	          <col class="span3">
+	          <col class="span6">
 	        </colgroup>
 	        <thead>
 	          <tr>
-	            <th>类名</th>
-	            <th>展现</th>
+	            <th>类名/代码</th>
+				<th>展现</th>
+	            <th>描述</th>
 	          </tr>
 	        </thead>
 	        <tbody>
+	          <!-- 复选按钮 -->
 	          <tr>
 	            <td>
-	              <code>c-loading</code>
+	            	<code>c-form-checkbox-normal</code>
 	            </td>
-	            <td style="background:#ffffff">
-					<p class="c-loading"><span></span></p>
+	            <td>
+              		<input type="checkbox" value="" name="checkbox-normal-btn" class="c-form-checkbox-normal" checked/>
+              		<input type="checkbox" value="" name="checkbox-normal-btn" class="c-form-checkbox-normal"/>
+              		<input type="checkbox" value="" name="checkbox-normal-btn" class="c-form-checkbox-normal" disabled/>
+	            </td>
+	            <td rowspan="3">
+	            	
+	            		复选框
+<pre>
+&lt;input type="checkbox" class="classname" value=""/&gt;
+</pre>
 	            </td>
 	          </tr>
 	          <tr>
-	            <td>
-	              <code>c-loading loader-grey</code>
-	            </td>
-	            <td style="background:#eeeeee">
-					<p class="c-loading loader-grey"><span></span></p>
-	            </td>
+	          	<td>
+	          		<code>c-form-checkbox</code>         		
+	          	</td>
+	          	<td>
+              		<input type="checkbox" value="" name="checkbox-btn" class="c-form-checkbox" checked/>
+              		<input type="checkbox" value="" name="checkbox-btn" class="c-form-checkbox"/>
+              		<input type="checkbox" value="" name="checkbox-btn" class="c-form-checkbox" disabled/>
+	          	</td>
 	          </tr>
 	          <tr>
-	            <td>
-	              <code>c-loading loader-dark</code>
-	            </td>
-	            <td style="background:#333333">
-					<p class="c-loading loader-dark"><span></span></p>
-	            </td>
+	          	<td>
+	          		<code>c-form-checkbox-blue</code>
+	          	</td>
+	          	<td>
+              		<input type="checkbox" value="" name="checkbox-blue-btn" class="c-form-checkbox-blue" checked/>
+              		<input type="checkbox" value="" name="checkbox-blue-btn" class="c-form-checkbox-blue"/>
+              		<input type="checkbox" value="" name="checkbox-blue-btn" class="c-form-checkbox-blue" disabled/>
+	          	</td>
 	          </tr>
 	        </tbody>
 	      </table>
