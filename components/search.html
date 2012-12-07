@@ -26,93 +26,63 @@
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
     <div class="container">
 
-<!-- List
-================================================== -->
-<section id="float">
+<section id="search">
   <div class="page-header">
-    <h1>浮层<small> <a href="../component/float/less/float.less">float.less</a></small></h1>
+    <h1>搜索框<small> <a href="../component/form/less/form.less">form.less</a></small></h1>
   </div>
   
   <div class="row">
     <div class="span0">
-      <h3>非模态浮层</h3>
-      <div id="tbh5v0" class="example">
-          <div class="c-float-popWrap msgMode show">
-              <div class="c-float-modePop">
-                <div class="warnMsg">非模态浮层</div>
-              </div>
-          </div>
-      </div>
+    	<div id="tbh5v0">
+	      	<div class="c-form-search">
+				<input autocomplete="off" placeholder="请输入关键字" class="inp-search" id="inp-search-index" name="q" type="search" value="">
+				<button type="button" style="display: none;"><span></span></button>
+				<input class="bton-search" name="search-bton" type="submit" value="">
+			</div>
+		</div>
     </div>
     
     <div class="span5">
     <h3>DOM结构</h3>
-<pre>
-&lt;div class="c-float-popWrap msgMode show"&gt;
-    &lt;div class="c-float-modePop"&gt;
-      &lt;div class="warnMsg"&gt;非模态浮层&lt;/div&gt;
-    &lt;/div&gt;
+		<pre>
+&lt;div class="c-form-search"&gt;
+	&lt;input autocomplete="off" class="inp-search" id="inp-search-index" name="q" type="search" value="我爱垦丁天气晴"&gt;
+	&lt;button type="button" style="display: none;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/button&gt;
+	&lt;input class="bton-search" name="search-bton" type="submit" value=""&gt;
 &lt;/div&gt;
-</pre>
+		</pre>
     	</div>
     </div>
-  <br />
-
+  <br>
   <div class="row">
     <div class="span0">
-      <h3>模态浮层</h3>
-      <div id="tbh5v0" class="example">
-          <div class="c-float-popWrap alertMode show">
-              <div class="c-float-modePop">
-                <div class="warnMsg">模态浮层</div>
-                <div class="doBtn">
-                    <button class="ok">确定</button>
-                    <button class="cancel">取消</button>
-                </div>
-              </div>
-          </div>
-      </div>
+    	<div id="tbh5v0">
+	      	<div class="c-form-search">
+				<input autocomplete="off" class="inp-search" id="inp-search-index" name="q" type="search" value="我爱垦丁天气晴">
+				<button type="button" style="display: block;"><span></span></button>
+				<input class="bton-search" name="search-bton" type="submit" value="">
+			</div>
+		</div>
     </div>
     
     <div class="span5">
     <h3>DOM结构</h3>
-<pre>
-&lt;div class="c-float-popWrap alertMode show"&gt;
-    &lt;div class="c-float-modePop"&gt;
-      &lt;div class="warnMsg"&gt;模态浮层&lt;/div&gt;
-      &lt;div class="content"&gt;内容内容&lt;/div&gt;
-      &lt;div class="doBtn"&gt;
-          &lt;button class="ok"&gt;确定&lt;/button&gt;
-          &lt;button class="cancel"&gt;取消&lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
+		<pre>
+&lt;div class="c-form-search"&gt;
+	&lt;input autocomplete="off" class="inp-search" id="inp-search-index" name="q" type="search" value="我爱垦丁天气晴"&gt;
+	&lt;button type="button" style="display: block;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/button&gt;
+	&lt;input class="bton-search" name="search-bton" type="submit" value=""&gt;
 &lt;/div&gt;
-</pre>
-      </div>
-    </div>
-  <br />
-
-  <div class="row">
-    <div class="span0">
-      <h3>删除浮层</h3>
-      <div id="tbh5v0" class="example">
-        <div class="c-float-delPop">
-            <div class="deltxt">删除</div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="span5">
-    <h3>DOM结构</h3>
-<pre>
-&lt;div class="c-float-delPop"&gt;
-    &lt;div class="deltxt"&gt;删除&lt;/div&gt;
-&lt;/div&gt;
-</pre>
+		</pre>
     	</div>
     </div>
-  <br />
+  <br>
+
+
 </section>
+
+
+
     </div>
 
     <!-- Le javascript
