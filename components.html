@@ -81,9 +81,11 @@
       <li><a href="#checkbox">复选</a></li>
       <li><a href="#input">输入框</a></li>
       <li><a href="#select">下拉框</a></li>
+      <li><a href="#search">搜索框</a></li>
       <li><a href="#sku">Sku选择框</a></li>
       <li><a href="#icon">图标</a></li>
       <li><a href="#list">列表</a></li>
+      <li><a href="#table">表格</a></li>
       <li><a href="#loading">加载动画</a></li>
       <li><a href="#more">更多按钮</a></li>
       <li><a href="#message">信息提示</a></li>
@@ -721,6 +723,64 @@
   </div>
 </section>
 
+<section id="search">
+  <div class="page-header">
+    <h1>搜索框<small> <a href="../component/form/less/form.less">form.less</a></small></h1>
+  </div>
+  
+  <div class="row">
+    <div class="span0">
+    	<div id="tbh5v0">
+	      	<div class="c-form-search">
+				<input autocomplete="off" placeholder="请输入关键字" class="inp-search" id="inp-search-index" name="q" type="search" value="">
+				<button type="button" style="display: none;"><span></span></button>
+				<input class="bton-search" name="search-bton" type="submit" value="">
+			</div>
+		</div>
+    </div>
+    
+    <div class="span5">
+    <h3>DOM结构</h3>
+		<pre>
+&lt;div class="c-form-search"&gt;
+	&lt;input autocomplete="off" class="inp-search" id="inp-search-index" name="q" type="search" value="我爱垦丁天气晴"&gt;
+	&lt;button type="button" style="display: none;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/button&gt;
+	&lt;input class="bton-search" name="search-bton" type="submit" value=""&gt;
+&lt;/div&gt;
+		</pre>
+    	</div>
+    </div>
+  <br>
+  <div class="row">
+    <div class="span0">
+    	<div id="tbh5v0">
+	      	<div class="c-form-search">
+				<input autocomplete="off" class="inp-search" id="inp-search-index" name="q" type="search" value="我爱垦丁天气晴">
+				<button type="button" style="display: block;"><span></span></button>
+				<input class="bton-search" name="search-bton" type="submit" value="">
+			</div>
+		</div>
+    </div>
+    
+    <div class="span5">
+    <h3>DOM结构</h3>
+		<pre>
+&lt;div class="c-form-search"&gt;
+	&lt;input autocomplete="off" class="inp-search" id="inp-search-index" name="q" type="search" value="我爱垦丁天气晴"&gt;
+	&lt;button type="button" style="display: block;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/button&gt;
+	&lt;input class="bton-search" name="search-bton" type="submit" value=""&gt;
+&lt;/div&gt;
+		</pre>
+    	</div>
+    </div>
+  <br>
+
+
+</section>
+
+
+
+
 <!-- Sku
 ================================================== -->
 <section id="sku">
@@ -1256,6 +1316,81 @@
     </div>
 </section>
 
+<!-- Table
+================================================== -->
+<section id="table">
+  <div class="page-header">
+    <h1>表格结构<small>用于页面表格数据排版 <a href="../component/table/less/table.less">table.less</a></small></h1>
+  </div>
+  <div class="row">
+    <div class="span0">
+      <h3>基础样式</h3>
+      <div id="tbh5v0" class="example">
+			<div class="c-table">
+            	<ul>
+					<li>
+						<label>公 司 名</label>
+						<strong>广州市知茗度茶叶有限公司</strong>
+					</li>
+					<li>
+						<label>所 在 地</label>
+						广东,  广州
+					</li>
+					<li>
+						<label>商&nbsp;&nbsp;&nbsp;&nbsp;家</label>
+						<a href="">知茗度茶叶专营店</a>
+					</li>
+
+					<li>
+						<label>保&nbsp;&nbsp;&nbsp;&nbsp;障</label>
+						<img src="http://a.tbcdn.cn/mw/s/mi/icons/trade/xcard.png" /> <img src="http://a.tbcdn.cn/mw/s/hi/tbtouch/icons/trade/xb_sevenday_return.png" /> 
+					</li>
+					
+					<li>
+						<span>服务电话</span>
+						<em>400-800-0808</em>
+					</li>
+				</ul>
+			</div>
+      </div>
+    </div>
+    
+    <div class="span5">
+    	<h3>基础DOM结构</h3>
+		<p>第一列支持label,span标签</p>
+<pre>
+&lt;div class="c-table"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;label&gt;公 司 名&lt;/label&gt;
+			&lt;strong&gt;广州市知茗度茶叶有限公司&lt;/strong&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;label&gt;所 在 地&lt;/label&gt;
+			广东,  广州
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;label&gt;商&nbsp;&nbsp;&nbsp;&nbsp;家&lt;/label&gt;
+			&lt;a href=""&gt;知茗度茶叶专营店&lt;/a&gt;
+		&lt;/li&gt;
+
+		&lt;li&gt;
+			&lt;label&gt;保&nbsp;&nbsp;&nbsp;&nbsp;障&lt;/label&gt;
+			&lt;img src="http://a.tbcdn.cn/mw/s/mi/icons/trade/xcard.png" /&gt; &lt;img src="http://a.tbcdn.cn/mw/s/hi/tbtouch/icons/trade/xb_sevenday_return.png" /&gt; 
+		&lt;/li&gt;
+		
+		&lt;li&gt;
+			&lt;span&gt;服务电话&lt;/span&gt;
+			&lt;em&gt;400-800-0808&lt;/em&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</pre> 
+    </div>
+  </div>
+
+</section>
+
 <!-- Loading
 ================================================== -->
 <section id="loading">
@@ -1782,117 +1917,63 @@
   <div class="page-header">
     <h1>浮层<small> <a href="../component/float/less/float.less">float.less</a></small></h1>
   </div>
-
+  
   <div class="row">
     <div class="span0">
-      <h3>气泡浮层</h3>
+      <h3>非模态浮层</h3>
       <div id="tbh5v0" class="example">
-        <div class="c-float-shortcutLayer">
-            <div class="shtxt">您可以点击下面的按钮新增快捷方式到桌面！</div>
-            <div class="shclose"></div>
-            <div class="xjt"><span><em></em></span></div> 
-        </div>
+          <div class="c-float-popWrap msgMode show">
+              <div class="c-float-modePop">
+                <div class="warnMsg">非模态浮层</div>
+              </div>
+          </div>
       </div>
     </div>
     
     <div class="span5">
     <h3>DOM结构</h3>
 <pre>
-&lt;div class="c-float-shortcutLayer"&gt;
-    &lt;div class="shtxt"&gt;您可以点击下面的按钮新增快捷方式到桌面！&lt;/div&gt;
-    &lt;div class="shclose"&gt;&lt;/div&gt;
-    &lt;div class="xjt"&gt;&lt;span&gt;&lt;em&gt;&lt;/em&gt;&lt;/span&gt;&lt;/div&gt; 
-&lt;/div&gt;
-</pre>
-    </div>
-  </div>
-  <br />
-  
-  <div class="row">
-    <div class="span0">
-      <h3>顶部弹出浮层</h3>
-      <div id="tbh5v0" class="example">
-	        <div class="c-float-fingPop">
-	            <div class="innerC">
-	                <div class="fingerImg"></div>
-	                <div class="ftxt">请以两指滑动回到页面顶端对付对付对付</div>
-	            </div>
-	        </div>
-      </div>
-    </div>
-    
-    <div class="span5">
-    <h3>DOM结构</h3>
-<pre>
-&lt;div class="c-float-fingPop"&gt;
-    &lt;div class="innerC"&gt;
-        &lt;div class="fingerImg"&gt;&lt;/div&gt;
-        &lt;div class="ftxt"&gt;请以两指滑动回到页面顶端对付对付对付&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="span0">
-      <div id="tbh5v0" class="example">
-		<div class="c-float-shakePop"><span>请摇晃手机以更新列表结果</span></div>
-      </div>
-    </div>
-    
-    <div class="span5">
-<pre>
-&lt;div class="c-float-shakePop"&gt;
-    &lt;span&gt;请摇晃手机以更新列表结果&lt;/span&gt;
-&lt;/div&gt;
-</pre>
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="span0">
-      <div id="tbh5v0" class="example">
-		<div class="c-float-impWarn"><span>重要提示</span></div>
-      </div>
-    </div>
-    
-    <div class="span5">
-<pre>
-&lt;div class="c-float-impWarn"&gt;
-    &lt;span&gt;重要提示&lt;/span&gt;
-&lt;/div&gt;
-</pre>
-    </div>
-  </div>
-  <br />
-  
-  <div class="row">
-    <div class="span0">
-      <h3>模态浮层</h3>
-      <div id="tbh5v0" class="example">
-        <div class="c-float-modePop">
-            <div class="warnMsg">购物车已满，请进行删除整理</div>
-            <div class="doBtn">
-                <button>立即整理</button>
-                <button>稍后再说</button>
-            </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="span5">
-    <h3>DOM结构</h3>
-<pre>
-&lt;div class="c-float-modePop"&gt;
-    &lt;div class="warnMsg"&gt;购物车已满，请进行删除整理&lt;/div&gt;
-    &lt;div class="doBtn"&gt;
-        &lt;button&gt;立即整理&lt;/button&gt;
-        &lt;button&gt;稍后再说&lt;/button&gt;
+&lt;div class="c-float-popWrap msgMode show"&gt;
+    &lt;div class="c-float-modePop"&gt;
+      &lt;div class="warnMsg"&gt;非模态浮层&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </pre>
     	</div>
+    </div>
+  <br />
+
+  <div class="row">
+    <div class="span0">
+      <h3>模态浮层</h3>
+      <div id="tbh5v0" class="example">
+          <div class="c-float-popWrap alertMode show">
+              <div class="c-float-modePop">
+                <div class="warnMsg">模态浮层</div>
+                <div class="doBtn">
+                    <button class="ok">确定</button>
+                    <button class="cancel">取消</button>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="span5">
+    <h3>DOM结构</h3>
+<pre>
+&lt;div class="c-float-popWrap alertMode show"&gt;
+    &lt;div class="c-float-modePop"&gt;
+      &lt;div class="warnMsg"&gt;模态浮层&lt;/div&gt;
+      &lt;div class="content"&gt;内容内容&lt;/div&gt;
+      &lt;div class="doBtn"&gt;
+          &lt;button class="ok"&gt;确定&lt;/button&gt;
+          &lt;button class="cancel"&gt;取消&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+      </div>
     </div>
   <br />
 
